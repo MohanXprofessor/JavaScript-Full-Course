@@ -38,3 +38,27 @@ var a=12; // window mein add hota hai
 // var a=13; // redeclared and updated, window mein add hota hai
 
 let b=13; // window mein add nahi hota hai
+
+
+// Temporal Dead Zone (TDZ) is the time between the start of the block and the declaration 
+// of the variable
+
+ // TDZ starts here
+ console.log(cd); // this will throw an error because c is in TDZ
+var cd=14; // TDZ ends here, now c can be used
+
+
+//Hoisting impact on var, let and const
+
+
+// Primitive -> aisi saari values jinko copy karne par tumhe ek real copy mil jaaye
+ //string , number, boolean, null, undefined, symbol, bigint
+
+// Non-Primitive -> aisi saari values jinko copy karne par tumhe ek reference milta hai parent ka.
+// object, array, function
+
+
+// NaN is a Fail number value.
+
+
+//Arithmetic, comparison, logical, bitwise operators,assignment, ternary, typeof, instanceof, delete, in, void
